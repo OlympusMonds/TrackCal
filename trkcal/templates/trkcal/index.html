@@ -1,0 +1,27 @@
+{% extends "trkcal/base.html" %}
+
+{% block content %}
+	<section id="recurring_col">
+        <h2> Reccuring Tasks </h2>
+        {% for task in recurringtasks %}
+            {% block entries %}
+            {% endblock entries %}
+        {% endfor %}
+	</section>
+
+	<section id="daily_col">
+        <h2> Daily Tasks </h2>
+        {% for task in dailytasks %}
+            {% block entries %}
+            {% endblock entries %}
+        {% endfor %}
+	</section>
+
+	<section id="due_col">
+        <h2> Due Tasks </h2>
+        {% for task in duetasks %}
+            {% block entries %}
+            {% endblock entries %}
+        {% endfor %}
+	</section>
+{% endblock content %}

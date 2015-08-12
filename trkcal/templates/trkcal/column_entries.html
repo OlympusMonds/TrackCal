@@ -1,0 +1,17 @@
+{% extends "trkcal/index.html" %}
+
+{% block entries %}
+<a href="dogs">
+    <div id="task">
+        <h3>{{ task.name }} </h3>
+        <div id="taskdetails">
+            <p>{{ task.description }}</p>
+        </div>
+        <a href="cats">
+            <div id="done">
+                I just did this!
+            </div>
+        </a>
+    </div>
+</a>
+{% endblock entries %}

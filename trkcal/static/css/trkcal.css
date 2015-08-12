@@ -1,0 +1,156 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#recurring_col {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#daily_col {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#due_col {
+	width: 270px;
+	padding: 5px 5px;
+	float: left;
+    margin: 0px 5px 5px 5px;
+}
+
+#task {
+    padding: 1% 4%;
+    height: 15%;
+
+}
+
+#taskdetails {
+    width: 41%;
+    padding: 1% 4%;
+    float: left;
+    height: 10%;
+}
+
+#done {
+    width: 41%;
+    padding: 1% 4%;
+    float: right;
+    height: 70%;
+}
+
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+
+	#pagewrap {
+		width: 94%;
+	}
+	#recurring_col {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#daily_col {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+
+	#due_col {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#recurring_col {
+		width: auto;
+		float: none;
+	}
+
+	#daily_col {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+
+	#due_col {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#due_col {
+		display: none;
+	}
+
+}
+
+#recurring_col {
+	background: #f8f8f8;
+}
+#daily_col {
+	background: #f8f8f8;
+}
+#due_col {
+	background: #f8f8f8;
+}
+
+#task {
+	background: #f0efef;
+}
+
+#done {
+	background: #a2efef;
+}
+
+header, #recurring_col, #daily_col, #due_col {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #recurring_col, #daily_col, #due_col, #task, footer {
+	border: solid 1px #ccc;
+}
